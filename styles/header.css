@@ -1,0 +1,33 @@
+.header{
+  background-color: var(--bg-verde-escuro);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.conteiner-header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.lista-menu ul{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center ;
+}
+.lista-menu li{
+  color: var(--color-white);
+}
+.lista-menu li:hover{
+  color: var(--gree-light);
+}
+
+@media (max-width:600px){
+  .lista-menu li{
+    background-color: #06743C;
+    padding: 10px;
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,22 @@
+/* Utilitárias */
+@import url("./styles/utilitarios/utilitarias.css");
+@import url("./styles/utilitarios/cores.css");
+@import url("./styles/utilitarios/reset.css");
+@import url("./styles/utilitarios/tipografia.css");
+
+
+
+/* Header */
+@import url("./styles/header.css");
+
+/* Main */
+@import url("./styles/main.css");
+
+
+/* Objetivos */
+@import url("./styles/objetivos.css");
+
+
+
+
+
