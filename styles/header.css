@@ -1,33 +1,95 @@
-.header{
+.menu-expanded {
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+
   background-color: var(--bg-verde-escuro);
   padding-top: 30px;
   padding-bottom: 30px;
+
+  position: fixed;
+  z-index: 99;
+
+  box-shadow: 0 0 50px #000000c2;
+
+  overflow-y: hidden;
 }
-.conteiner-header{
+
+.conteiner-header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   gap: 40px;
 }
-.lista-menu ul{
+.lista-menu ul {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center ;
+  justify-content: center;
 }
-.lista-menu li{
+.lista-menu li {
   color: var(--color-white);
 }
-.lista-menu li:hover{
+.lista-menu li:hover {
   color: var(--gree-light);
 }
 
-@media (max-width:600px){
-  .lista-menu li{
-    background-color: #06743C;
-    padding: 10px;
-    border-radius: 4px;
+.fa-solid {
+  display: none;
+
+  cursor: pointer;
+
+  color: white;
+  font-size: 2rem;
+}
+
+.menu-expanded header {
+  min-height: 100vh;
+}
+
+.menu-mobile {
+  display: none;
+  margin-top: 200px;
+  flex-direction: column;
+  align-items: center;
+  gap: 42px;
+}
+
+.menu-mobile nav ul {
+  flex-direction: column;
+  gap: 42px;
+}
+
+.menu-mobile nav ul li {
+  background-color: none;
+}
+.menu-expanded .menu-mobile {
+  display: flex;
+}
+
+.menu-expanded .conteiner-header .menu-mobile {
+  display: block;
+}
+
+.menu-expanded .header .fa-solid.fa-xmark {
+  display: block;
+}
+
+.menu-expanded .header .conteiner-header .fa-solid.fa-bars {
+  display: none;
+}
+
+@media (max-width: 830px) {
+  .conteiner-header > nav,
+  .conteiner-header > a {
+    display: none;
+  }
+
+  .conteiner-header .fa-solid.fa-bars {
+    display: block;
   }
 }
