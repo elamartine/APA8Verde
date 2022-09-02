@@ -1,12 +1,15 @@
 .section-conquistas {
   padding-top: 60px;
   background-color: var(--bg-gree-light);
+  padding-bottom: 60px;
+  
 }
 
 .conteiner-conquistas {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+
 }
 .conquistas {
   grid-column: 1;
