@@ -59,3 +59,13 @@
     min-height: 100vh;
   }
 }
+
+@media (max-width: 500px) {
+  .conteudo-main {
+    padding: 20px;
+  }
+
+  .conteudo-main h1::before {
+    top: -60px;
+  }
+}
