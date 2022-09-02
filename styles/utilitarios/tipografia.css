@@ -1,55 +1,62 @@
-.lista-menu{
-  font-family: 'Roboto', sans-serif;
+.lista-menu {
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   line-height: 150%;
 }
-.titulo{
-  font-family: 'Poppins', sans-serif;
+.titulo {
+  font-family: "Poppins", sans-serif;
   font-size: 48px;
   line-height: 133%;
-  color: #1A1A1A;
+  color: #1a1a1a;
   padding-bottom: 40px;
 }
-.sub-titulo{
-  font-family: 'Poppins', sans-serif;
+.sub-titulo {
+  font-family: "Poppins", sans-serif;
   font-size: 36px;
   line-height: 83%;
-  color: #2E2E2E;
-  
+  color: #2e2e2e;
+  padding-bottom: 30px;
 }
-.paragrafos{
-  font-family: 'Poppins', sans-serif;
+.paragrafos {
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   line-height: 150%;
   color: #404040;
 }
-.paragrafos-x{
-  font-family: 'Poppins', sans-serif;
+.paragrafos-x {
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   line-height: 150%;
   color: #404040;
   text-align: center;
 }
+.paragrafos-xx {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  color: #404040;
+  text-align: left;
+}
 
-@media (max-width:800px){
-  .titulo{
+@media (max-width: 800px) {
+  .titulo {
     font-size: 36px;
   }
-  .sub-titulo{
+  .sub-titulo {
     font-size: 28px;
   }
-  .paragrafos{
+  .paragrafos {
     font-size: 20px;
   }
 }
-@media (max-width:600px){
-  .titulo{
+@media (max-width: 600px) {
+  .titulo {
     font-size: 28px;
   }
-  .sub-titulo{
+  .sub-titulo {
     font-size: 24px;
   }
-  .paragrafos{
+  .paragrafos {
     font-size: 18px;
   }
 }
