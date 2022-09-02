@@ -15,6 +15,7 @@
   border-radius: 8px;
   color: var(--color-white);
   text-transform: uppercase;
+  font-weight: 600;
 }
 .btn:hover{
   background-color: #DF4646;
