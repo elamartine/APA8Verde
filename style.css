@@ -4,14 +4,11 @@
 @import url("./styles/utilitarios/reset.css");
 @import url("./styles/utilitarios/tipografia.css");
 
-
-
 /* Header */
 @import url("./styles/header.css");
 
 /* Main */
 @import url("./styles/main.css");
-
 
 /* Objetivos */
 @import url("./styles/objetivos.css");
@@ -19,7 +16,5 @@
 /* Conquista */
 @import url("./styles/conquista.css");
 
-
-
-
-
+/* Formulário */
+@import url("./styles/formulario.css");

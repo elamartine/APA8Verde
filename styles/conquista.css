@@ -10,12 +10,13 @@
 }
 .conquistas {
   grid-column: 1;
+  padding-left: 60px;
 }
 .conquistas h2 {
   position: relative;
   display: flex;
   align-items: center;
-  margin-left: 30px;
+  justify-content: certer;
 }
 .conquistas h2::before {
   content: "";
@@ -31,4 +32,6 @@
 }
 .conquistas-conteiner {
   display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
