@@ -1,5 +1,6 @@
 .menu-expanded {
   overflow: hidden;
+  position: relative;
 }
 
 .header {
@@ -15,6 +16,10 @@
   box-shadow: 0 0 50px #000000c2;
 
   overflow-y: hidden;
+}
+
+.menu-expanded .header {
+  box-shadow: none;
 }
 
 .conteiner-header {
@@ -47,16 +52,29 @@
   font-size: 2rem;
 }
 
-.menu-expanded header {
-  min-height: 100vh;
-}
-
 .menu-mobile {
-  display: none;
-  margin-top: 200px;
+  min-height: 100vh;
+  padding-top: 200px;
+
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 42px;
+
+  position: fixed;
+  z-index: 98;
+  right: 0;
+  left: 0;
+
+  background-color: var(--bg-verde-escuro);
+
+  transform: translateY(-100%);
+
+  transition: all 0.3s linear;
+}
+
+.menu-mobile > a {
+  width: max-content;
 }
 
 .menu-mobile nav ul {
@@ -68,11 +86,7 @@
   background-color: none;
 }
 .menu-expanded .menu-mobile {
-  display: flex;
-}
-
-.menu-expanded .conteiner-header .menu-mobile {
-  display: block;
+  transform: translateY(0%);
 }
 
 .menu-expanded .header .fa-solid.fa-xmark {
