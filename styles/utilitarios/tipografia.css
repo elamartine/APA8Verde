@@ -62,5 +62,11 @@
   }
 }
 
+@media (max-width: 500px) {
+  .paragrafos {
+    font-size: 16px;
+  }
+}
+
 /* font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; */
