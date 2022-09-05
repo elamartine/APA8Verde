@@ -16,6 +16,7 @@
   color: #000;
   text-transform: uppercase;
   font-weight: 600;
+  display: inline-block;
 }
 .btn:hover{
   background-color: #DF4646;
