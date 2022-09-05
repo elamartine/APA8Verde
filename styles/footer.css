@@ -1,0 +1,12 @@
+.footer ul{
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.footer{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #004723;
+}
+
