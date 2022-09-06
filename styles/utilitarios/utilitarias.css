@@ -19,8 +19,8 @@
   display: inline-block;
 }
 
-.btn:hover{
-  background-color: #DF4646;
+.btn:hover {
+  background-color: #df4646;
 }
 
 .btn:hover {
@@ -41,6 +41,7 @@
   position: fixed;
   bottom: 1rem;
   right: 1rem;
+  z-index: 50;
 
   opacity: 0;
   visibility: hidden;
@@ -59,4 +60,3 @@
   font-size: 1.5rem;
   color: white;
 }
-
