@@ -1,6 +1,7 @@
 body{
   box-sizing: border-box;
-  overflow-x: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 section{
   width: 100%;

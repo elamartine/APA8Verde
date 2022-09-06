@@ -19,6 +19,12 @@
   color: #2e2e2e;
   padding-bottom: 30px;
 }
+
+.sub-titulo-x{
+  font-size: 32px;
+  font-family: 'poppins';
+  color: #2e2e2e;
+}
 .paragrafos {
   font-family: "Poppins", sans-serif;
   font-size: 24px;
@@ -31,6 +37,7 @@
   line-height: 150%;
   color: #404040;
   text-align: center;
+  padding-bottom: 20px;
 }
 .paragrafos-xx {
   font-family: "Poppins", sans-serif;
@@ -50,6 +57,9 @@
   .paragrafos {
     font-size: 20px;
   }
+  .sub-titulo-x{
+    font-size: 26px;
+  }
 }
 @media (max-width: 600px) {
   .titulo {
@@ -60,6 +70,9 @@
   }
   .paragrafos {
     font-size: 18px;
+  }
+  .sub-titulo-x{
+    font-size: 22px;
   }
 }
 
