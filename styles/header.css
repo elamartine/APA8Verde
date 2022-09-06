@@ -105,5 +105,6 @@
 
   .conteiner-header .fa-solid.fa-bars {
     display: block;
+    overflow: hidden;
   }
 }
