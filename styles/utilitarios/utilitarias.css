@@ -1,4 +1,4 @@
-.conteiner{
+.conteiner {
   padding-left: 30px;
   padding-right: 30px;
   max-width: 1400px;
@@ -7,17 +7,50 @@
   margin-right: auto;
 }
 
-.btn{
+.btn {
   padding: 16px;
   font-size: 20px;
-  font-family: 'Poppins', sans-serif;
-  background-color: #F76E11;
+  font-family: "Poppins", sans-serif;
+  background-color: #f76e11;
   border-radius: 8px;
   color: #000;
   text-transform: uppercase;
   font-weight: 600;
   display: inline-block;
 }
-.btn:hover{
-  background-color: #DF4646;
+.btn:hover {
+  background-color: #df4646;
+}
+
+#backToTopButton {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #df4646;
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(100%);
+  transition: 200ms;
+}
+
+#backToTopButton.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+}
+
+#backToTopButton i {
+  display: block;
+  font-size: 1.5rem;
+  color: white;
 }

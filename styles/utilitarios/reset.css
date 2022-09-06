@@ -1,8 +1,11 @@
-body{
+html {
+  scroll-behavior: smooth;
+}
+body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
-section{
+section {
   width: 100%;
 }
 html,
@@ -39,7 +42,7 @@ img {
   max-width: 100%;
 }
 
-*{
+* {
   box-sizing: border-box;
-  transition:  0.3s;
+  transition: 0.3s;
 }
