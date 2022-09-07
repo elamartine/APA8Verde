@@ -99,7 +99,7 @@
 
 @media (max-width: 840px) {
   .conteiner-header > nav,
-  .conteiner-header > a {
+  .conteiner-header > a:not(.conteiner-header > a:first-child) {
     display: none;
   }
 
