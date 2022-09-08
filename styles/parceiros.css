@@ -1,32 +1,31 @@
-.section-parceiros{
-  background-color: #73FFBC;
+.section-parceiros {
+  background-color: #73ffbc;
   padding-top: 60px;
   padding-bottom: 60px;
-
-
-  
 }
-.coteiner-parceiros h2{
+.coteiner-parceiros h2 {
   text-align: center;
 }
 
+.imgs picture {
+  height: auto;
+  padding: 20px;
 
-.imgs{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  overflow-x: auto;
+
+  border: solid rgba(0, 71, 35, 0.1) 2px;
+  box-shadow: #4ac687 blur(5px);
+  border-radius: 16px;
 }
 
-
-.imgs img{
+.imgs img {
+  width: 100%;
   max-width: 200px;
   max-height: 200px;
 }
 
-
-
-
-
-
+.swiper {
+  width: 100%;
+}

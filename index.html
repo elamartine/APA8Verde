@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="style.css">
@@ -195,47 +197,47 @@
         <div class="conteiner coteiner-parceiros">
             <h2 class="titulo">NOSSOS PARCEIROS</h2>
 
-            <div class="imgs">
-                <picture class="img">
-                    <img src="./img/partners/aesa.png" alt="">
-                </picture>
-                <picture class="img">
-                    <img src="./img/partners/borborema-energetica.png" alt="">
-                </picture>
-                <picture class="img">
-                    <img src="./img/partners/cagepa.png" alt="">
-                </picture>
-                <picture class="img">
-                    <img src="./img/partners/cbh-pb.png" alt="">
-                </picture>
-                <picture class="img">
-                    <img src="./img/partners/dnocs.png" alt="">
-                </picture>
-                <picture class="img">
-                    <img src="./img/partners/energisa.png" alt="">
-                </picture>
-                <picture class="img">
-                    <img src="./img/partners/insa.png" alt="">
-                </picture>
-                <picture class="img">
-                    <img src="./img/partners/ministerio-publico.png" alt="">
-                </picture>
-                <picture class="img">
-                    <img src="./img/partners/prefeitura-municipal-boqueirao.png" alt="">
-                </picture>
-                <picture class="img">
-                    <img src="./img/partners/Sebrae.png" alt="">
-                </picture>
-                <picture class="img">
-                    <img src="./img/partners/sudema.png" alt="">
-                </picture>
-                <picture class="img">
-                    <img src="./img/partners/uepb.png" alt="">
-                </picture>
-
+            <div class="swiper mySwiper">
+                <div class="imgs swiper-wrapper">
+                    <picture class="img swiper-slide">
+                        <img src="./img/partners/aesa.png" alt="">
+                    </picture>
+                    <picture class="img swiper-slide">
+                        <img src="./img/partners/borborema-energetica.png" alt="">
+                    </picture>
+                    <picture class="img swiper-slide">
+                        <img src="./img/partners/cagepa.png" alt="">
+                    </picture>
+                    <picture class="img swiper-slide">
+                        <img src="./img/partners/cbh-pb.png" alt="">
+                    </picture>
+                    <picture class="img swiper-slide">
+                        <img src="./img/partners/dnocs.png" alt="">
+                    </picture>
+                    <picture class="img swiper-slide">
+                        <img src="./img/partners/energisa.png" alt="">
+                    </picture>
+                    <picture class="img swiper-slide">
+                        <img src="./img/partners/insa.png" alt="">
+                    </picture>
+                    <picture class="img swiper-slide">
+                        <img src="./img/partners/ministerio-publico.png" alt="">
+                    </picture>
+                    <picture class="img swiper-slide">
+                        <img src="./img/partners/prefeitura-municipal-boqueirao.png" alt="">
+                    </picture>
+                    <picture class="img swiper-slide">
+                        <img src="./img/partners/Sebrae.png" alt="">
+                    </picture>
+                    <picture class="img swiper-slide">
+                        <img src="./img/partners/sudema.png" alt="">
+                    </picture>
+                    <picture class="img swiper-slide">
+                        <img src="./img/partners/uepb.png" alt="">
+                    </picture>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
-
-
         </div>
 
     </section>
@@ -313,6 +315,24 @@
     <!-- <script src="./script/carrossel.js"></script> -->
     <script type="module" src="./script/main.js"></script>
     <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 500,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 
 </body>
 
