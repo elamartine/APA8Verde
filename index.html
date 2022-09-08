@@ -28,15 +28,15 @@
 
             <nav class="lista-menu ">
                 <ul>
-                    <a href="" >
-                        <li>Sobre</li>
-                    
-                    <a href="#conquistas">
-                        <li>Conquistas</li>
-                    </a>
                     <a href="">
-                        <li>Mudas</li>
-                    </a>
+                        <li>Sobre</li>
+
+                        <a href="#conquistas">
+                            <li>Conquistas</li>
+                        </a>
+                        <a href="">
+                            <li>Mudas</li>
+                        </a>
                 </ul>
             </nav>
             <a class="btn" href="./adquirir-mudas.html">Adquirir muda</a>
@@ -197,84 +197,47 @@
         <div class="conteiner coteiner-parceiros">
             <h2 class="titulo">NOSSOS PARCEIROS</h2>
 
-            <div class="imgs">
-                <picture class="img">
-                    <img src="./img/partners/aesa 1.svg" alt="">
-                </picture>
-                <picture class="img">
-                    <img src="./img/partners/borborema-energetica 1.svg" alt="">
-                </picture>
-                <picture class="img">
-                    <img src="./img/partners/cagepa 1.svg" alt="">
-                </picture>
-                <picture class="img">
-                    <img src="./img/partners/cbh-pb 1.svg" alt="">
-                </picture>
-                <picture class="img">
-                    <img src="./img/partners/energisa 1.svg" alt="">
-                </picture>
-                <picture class="img">
-                    <img src="./img/partners/insa 1.svg" alt="">
-                </picture>
-                <picture class="img">
-                    <img src="./img/partners/ministerio-publico 1.svg" alt="">
-                </picture>
-                <picture class="img">
-                    <img src="./img/partners/prefeitura-municipal-boqueirao 1.svg" alt="">
-                </picture>
-                <picture class="img">
-                    <img src="./img/partners/Sebrae 1.svg" alt="">
-                </picture>
-                <picture class="img">
-                    <img src="./img/partners/sudema 1.svg" alt="">
-                </picture>
-                <picture class="img">
-                    <img src="./img/partners/uepb 1.svg" alt="">
-                </picture>
-                <picture class="img">
-                    <img src="./img/partners/dnocs 1.svg" alt="">
-                </picture>
-
 
             <div class="swiper mySwiper">
                 <div class="imgs swiper-wrapper">
                     <picture class="img swiper-slide">
-                        <img src="./img/partners/aesa.png" alt="">
+                        <img src="./img/partners/aesa.svg" alt="">
                     </picture>
                     <picture class="img swiper-slide">
-                        <img src="./img/partners/borborema-energetica.png" alt="">
+                        <img src="./img/partners/borborema-energetica.svg" alt="">
                     </picture>
                     <picture class="img swiper-slide">
-                        <img src="./img/partners/cagepa.png" alt="">
+                        <img src="./img/partners/cagepa.svg" alt="">
                     </picture>
                     <picture class="img swiper-slide">
-                        <img src="./img/partners/cbh-pb.png" alt="">
+                        <img src="./img/partners/cbh-pb.svg" alt="">
                     </picture>
                     <picture class="img swiper-slide">
-                        <img src="./img/partners/dnocs.png" alt="">
+                        <img src="./img/partners/dnocs.svg" alt="">
                     </picture>
                     <picture class="img swiper-slide">
-                        <img src="./img/partners/energisa.png" alt="">
+                        <img src="./img/partners/energisa.svg" alt="">
                     </picture>
                     <picture class="img swiper-slide">
-                        <img src="./img/partners/insa.png" alt="">
+                        <img src="./img/partners/insa.svg" alt="">
                     </picture>
                     <picture class="img swiper-slide">
-                        <img src="./img/partners/ministerio-publico.png" alt="">
+                        <img src="./img/partners/ministerio-publico.svg" alt="">
                     </picture>
                     <picture class="img swiper-slide">
-                        <img src="./img/partners/prefeitura-municipal-boqueirao.png" alt="">
+                        <img src="./img/partners/prefeitura-municipal-boqueirao.svg" alt="">
                     </picture>
                     <picture class="img swiper-slide">
-                        <img src="./img/partners/Sebrae.png" alt="">
+                        <img src="./img/partners/Sebrae.svg" alt="">
                     </picture>
                     <picture class="img swiper-slide">
-                        <img src="./img/partners/sudema.png" alt="">
+                        <img src="./img/partners/sudema.svg" alt="">
                     </picture>
                     <picture class="img swiper-slide">
-                        <img src="./img/partners/uepb.png" alt="">
+                        <img src="./img/partners/uepb.svg" alt="">
                     </picture>
                 </div>
+
                 <div class="swiper-pagination"></div>
             </div>
         </div>
@@ -363,17 +326,44 @@
 
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 4,
+            // slidesPerView: 4,
             spaceBetween: 30,
             centeredSlides: true,
             loop: true,
             autoplay: {
-                delay: 500,
+                delay: 1500,
+                disableOnInteraction: false,
             },
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
             },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                440: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                },
+
+                920: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                }
+            }
         });
     </script>
 
