@@ -22,17 +22,23 @@
 
 
 
+
 .imgs img{
   width:300px;
   height: 300px;
 }
+
 .imgs img {
   width: 100%;
   max-width: 200px;
   max-height: 200px;
-
 }
 
 .swiper {
   width: 100%;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
 }
