@@ -20,16 +20,14 @@
 </head>
 
 <body>
-    <div id="preloader">
-        <div class="inner">
 
-            <div class="bolas">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
+
+    <div class="load">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
+
     <header class="header">
         <div class="conteiner conteiner-header">
             <a href="./index.html">
@@ -330,9 +328,7 @@
 
     <script>
         $(window).on("load", function () {
-            $("#preloader .inner").fadeOut();
-            $("#preloader").delay(10).fadeOut("slow");
-            $("body").delay(10).css({ overflow: "visible" });
+            $(".load")
         });
     </script>
     <script type="module" src="./script/main.js"></script>
