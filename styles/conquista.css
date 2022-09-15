@@ -9,6 +9,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+  
 
 }
 .conteiner-conquistas img{
@@ -43,6 +44,9 @@
   flex-direction: column;
   gap: 40px;
 }
+#conquistas:target{
+  scroll-margin-top: 100px;
+}
 
 @media (max-width:800px){
   .conteiner-conquistas img{
@@ -55,5 +59,8 @@
   }
   .conteudo-conquistas p{
     margin-bottom: 40px;
+  }
+  #conquistas:target{
+    scroll-margin-top: 50px;
   }
 }

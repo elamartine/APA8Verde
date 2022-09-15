@@ -4,7 +4,7 @@
   left:0;
   right:0;
   bottom:0;
-  background-image: linear-gradient( to right, #F76E11, #FFBC80 ); 
+  background-image: linear-gradient( to right, #F76E11 0%, #FFBC80 50%); 
   z-index:999; 
 }
 #preloader .inner {

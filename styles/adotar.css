@@ -15,6 +15,11 @@
   justify-content: center;
   border-radius: 16px;
   padding: 20px;
+  
+}
+
+#mudas:target{
+  scroll-margin-top: 200px;
 }
 
 .imgs-adotar {
@@ -103,6 +108,9 @@
   .imgs-adotar img {
     max-width: 150px;
     max-height: 150px;
+  }
+  #mudas:target{
+    scroll-margin-top: 50px;
   }
 
   #img1 {
