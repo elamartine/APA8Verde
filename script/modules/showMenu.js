@@ -1,16 +1,20 @@
 export default function showMenu() {
-  const showButton = document.querySelector(".fa-solid.fa-bars");
-  const closeButton = document.querySelector(".fa-solid.fa-xmark");
+  const Button = document.querySelector(".menu.menu1");
   const body = document.querySelector("body");
 
-  showButton.addEventListener("click", openMenu);
-  closeButton.addEventListener("click", closeMenu);
+  Button.addEventListener("click", clickOnHamburguer);
 
-  function openMenu() {
-    body.classList.add("menu-expanded");
+  function clickOnHamburguer() {
+    body.classList.toggle("menu-expanded");
   }
 
-  function closeMenu() {
-    body.classList.remove("menu-expanded");
-  }
+  document.querySelectorAll(".menu").forEach((menu) => {
+    menu.addEventListener("click", () => {
+      if (menu.classList.contains("active")) {
+        menu.classList.remove("active");
+      } else {
+        menu.classList.add("active");
+      }
+    });
+  });
 }
